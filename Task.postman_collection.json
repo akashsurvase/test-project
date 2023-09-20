@@ -1,0 +1,319 @@
+{
+	"info": {
+		"_postman_id": "8e79e133-ef15-4210-8262-b5d6c1ec30dc",
+		"name": "Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20475345"
+	},
+	"item": [
+		{
+			"name": "users/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Akash\",\n    \"email\":\"ak@gmail.com\",\n    \"password\":\"akash\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"password\":\"akash\",\n    \"email\":\"ak@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add task",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvYmoiOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKdlltb2lPbnNpYVdRaU9qRXNJbVZ0WVdsc0lqb2lZV3RBWjIxaGFXd3VZMjl0SWl3aWJtRnRaU0k2SWtGcllYTm9JbjBzSW1saGRDSTZNVFkzTlRjMk9EVTFPSDAuV3FIQndVRmdfa0t4WG96RnE2UFNYNHhxdGh4dHJmaG81b0x0NVRlZlFzSSIsImlhdCI6MTY3NTc2ODU1OH0.4yxd5J68O_QcNSetWGEayzr0F4-cxTsBsfdwp_3uyJU",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-access-token",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"first Task\",\n    \"due_date\":\"2023-02-08\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/tasks/add-task",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"tasks",
+						"add-task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update task",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvYmoiOnsiaWQiOjEsImVtYWlsIjoiYWtAZ21haWwuY29tIiwibmFtZSI6IkFrYXNoIn0sImlhdCI6MTY3NTc2ODk3OX0.RZO5ObeP52Ky1NQNMEdDWd9aC8FKiaj8_jf04-KgoNY",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-access-token",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/tasks/update-task",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"tasks",
+						"update-task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get tasks",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvYmoiOnsiaWQiOjEsImVtYWlsIjoiYWtAZ21haWwuY29tIiwibmFtZSI6IkFrYXNoIn0sImlhdCI6MTY3NTc2ODk3OX0.RZO5ObeP52Ky1NQNMEdDWd9aC8FKiaj8_jf04-KgoNY",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-access-token",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/tasks/get-tasks?skip&limit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"tasks",
+						"get-tasks"
+					],
+					"query": [
+						{
+							"key": "skip",
+							"value": ""
+						},
+						{
+							"key": "limit",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete task",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvYmoiOnsiaWQiOjEsImVtYWlsIjoiYWtAZ21haWwuY29tIiwibmFtZSI6IkFrYXNoIn0sImlhdCI6MTY3NTc2ODk3OX0.RZO5ObeP52Ky1NQNMEdDWd9aC8FKiaj8_jf04-KgoNY",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-access-token",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/tasks/delete-task?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"tasks",
+						"delete-task"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Task CSV",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvYmoiOnsiaWQiOjEsImVtYWlsIjoiYWtAZ21haWwuY29tIiwibmFtZSI6IkFrYXNoIn0sImlhdCI6MTY3NTc2ODk3OX0.RZO5ObeP52Ky1NQNMEdDWd9aC8FKiaj8_jf04-KgoNY",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-access-token",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "csvFile",
+							"type": "file",
+							"src": "/home/stark/Downloads/Untitled spreadsheet - Sheet1.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/tasks/add-task-csv",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"tasks",
+						"add-task-csv"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
